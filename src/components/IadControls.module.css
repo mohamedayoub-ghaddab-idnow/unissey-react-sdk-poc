@@ -1,0 +1,15 @@
+.iadToggle {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+  width: auto !important;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.iadToggle input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #333;
+  cursor: pointer;
+}
