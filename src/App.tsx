@@ -5,6 +5,7 @@ import { PageHeader } from "./components/PageHeader";
 import type { Page } from "./config/pages";
 import { pages } from "./config/pages";
 import { VideoPage } from "./pages/VideoPage";
+import { VideoDocumentRecorder } from "./pages/VideoDocumentRecorderPage";
 import { SelfiePage } from "./pages/SelfiePage";
 import { ReferencePage } from "./pages/ReferencePage";
 import { FullCapturePage } from "./pages/FullCapturePage";
@@ -23,6 +24,7 @@ function App() {
         <PageHeader title={title} />
 
         {page === "video" && <VideoPage />}
+        {page === "videoDocument" && <VideoDocumentRecorder />}
         {page === "selfie" && <SelfiePage />}
         {page === "reference" && <ReferencePage />}
         {page === "full" && <FullCapturePage />}
